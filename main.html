@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><Vendora.com></Vendora></title>
+    <title>Vendora site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,23 +13,115 @@
         <div class="logo">
             <img src="logo.png" alt="Logo Vendora">
         </div>
+
         <ul class="nav-links">
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#produits">Produits</a></li>
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Produits</a></li>
+            <li><a href="">Contact</a></li>
+            
         </ul>
+        
+        <div class="search">
+            <input type="text" placeholder="Rechercher des produits..." class="search-input">
+            <img id="icon" src="iconsearch.png" alt="Icône de recherche">
+        </div>
     </nav>
 
-    <!-- Première section -->
-    <section id="produits" class="product-section">
-        <img src="huile-cosmetique.jpg" alt="Huile Cosmétique pour Cheveux" class="product-image">
-        <h2>Huile Cosmétique pour Cheveux</h2>
+    <!-- Image de la landing page -->
+<div class="landing-image-container">
+    <img src="landing-image.png" alt="Image de Landing Page" class="landing-image">
+</div>
+
+<!-- Les avantages permanents -->
+<main>
+    <h1><b>Vos avantages permanents</b></h1>
+</main>
+
+<section class="livraison-section">
+    <div class="livraison-container">
+        <div class="livraison-item">
+            <img src="image1.png" alt="Livraison" class="icon">
+            <p>Livraison Maroc à partir de 25 dhs</p>
+        </div>
+        <div class="livraison-item">
+            <img src="image2.png" alt="Satisfaction" class="icon">
+            <p>Votre satisfaction et notre but</p>
+        </div>
+        <div class="livraison-item">
+            <img src="image3.png" alt="Sans produits chimiques" class="icon">
+            <p>Sans produits chimiques</p>
+        </div>
+       
+        <div class="livraison-item">
+            <img src="image4.png" alt="Mini produit offert" class="icon">
+            <p>Mini produit offert dès 300 dhs d'achats</p>
+        </div>
+    </div>
+</section>
+
+<!-- Les produits vendus -->
+<main>
+    <h1>Nos produits<span> bio </span>et naturelles !</h1>
+</main>
+
+<section>
+    <div class="cadre-container">    
+        <div class="Produits">
+            <img src="serum product.png" alt="">
+            <h1>Sérum bio </h1>
+            <button>Ajouter au panier</button>
+        </div>
+
+        <div class="Produits">
+            <img src="choimpoing product.png" alt="">
+            <h1>Chompoing product </h1>
+            <button>Ajouter au panier</button>
+        </div>
+
+        <div class="Produits">
+            <img src="crème product.png" alt="">
+            <h1>crème product </h1>
+            <button>Ajouter au panier</button>
+        </div>
+
+        <div class="Produits">
+            <img src="spray product.png" alt="">
+            <h1>Spray bio </h1>
+            <button>Ajouter au panier</button>
+        </div>
+
+
+        <!-- Presentation de Vendora -->
+
+        <section class="presentation-section">
+            <div class="content-container">
+                <div class="image-container">
+                    <img src="Presentimage.png" alt="Huile pour cheveux bio" />
+                </div>
+                <div class="description-container">
+                    <h1>Notre entreprise</h1>
+                    <p>
+                        Nous sommes spécialisés dans la vente d'huiles pour cheveux bio et naturelles. 
+                        Nos produits sont élaborés à partir d'ingrédients purs, tels que l'amande, l'olive et l'aloe vera. 
+                        Nous croyons en la puissance de la nature pour nourrir et revitaliser vos cheveux.
+                    </p>
+                    <button class="learn-more-button">En savoir plus</button>
+                </div>
+            </div>
+        </section>
+
+
+
+        
+
+        <!-- <h2>Huile Cosmétique pour Cheveux</h2>
         <p>Notre huile cosmétique pour cheveux nourrit et hydrate vos cheveux, leur donnant brillance et douceur.</p>
         <p>Elle est formulée à partir d'ingrédients naturels et est idéale pour tous les types de cheveux.</p>
         <p>Utilisez-la quotidiennement pour des résultats optimaux.</p>
-    </section>
+    </section>  -->
 
-    <!-- Formulaire de commande -->
+
+    <!-- Formulaire de commande
     <section class="order-form">
         <h2>Passer une commande</h2>
         <form id="commandeForm">
@@ -56,7 +148,7 @@
         <div id="error-message" class="error-message"></div>
     </section>
     
-    <!-- Footer -->
+    Footer
 <footer>
     <div class="footer-content">
         <p>&copy; 2023 Vendora. Tous droits réservés.</p>
@@ -74,4 +166,4 @@
 </footer>
 <script src="script.js"></script>
 </body>
-</html>
+</html> 

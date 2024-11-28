@@ -1,116 +1,248 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
+/* Styles de la barre de navigation */
 .navbar {
-    background-color: #326005;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+background-color: #f0f7f1; /* Couleur de fond */
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: rgb(86, 87, 87);
+height: 100px;
+padding: 10px 10px;
+gap: 0px;
+border-bottom: 2px solid #6b9d72; /* Bordure en bas */
 }
-
 .navbar .logo img {
-    height: 50px;
+height: 90px; /* Augmenter la taille de l'image du logo */
+width: auto; /* Conserver le ratio de l'image */
+}
+.navbar ul {
+display: flex;
+gap: 40px;
+list-style: none;
+font-size: 21px;
+font-family: "Poppins", sans-serif; 
+}
+.navbar ul li {
+color: rgb(87, 86, 86); /* Couleur des éléments de la liste */
+}
+.navbar ul li a {
+text-decoration: none; /* Supprime le soulignement */
+color: rgb(87, 86, 86); /* Couleur des liens */
+transition: color 0.3s; /* Transition pour le changement de couleur */
+}
+.navbar ul li a:hover {
+color: #6c920d; /* Couleur au survol */
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
+
+/* Styles de la barre de recherche */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.nav-links li {
-    margin: 0 15px;
+.search-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 13px;
+  flex: 1;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
+.search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
-.product-section {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    margin: 20px auto;
-    border-radius: 5px;
-    max-width: 800px;
+#icon {
+  width: 27px;
+  height: 27px;
 }
 
-.product-image {
-    max-width: 100%;
-    height: auto;
+
+/* Styles de l'image de landing page */
+.landing-image-container {
+  width: 100%; /* Prend toute la largeur de la page */
 }
 
-.order-form {
-    background-color: white;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 5px;
-    max-width: 500px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.landing-image {
+  width: 100%; /* Prend toute la largeur du conteneur */
+  height: 1000px; /* Conserve le ratio de l'image */
 }
 
-.order-form h2 {
-    text-align: center;
+
+/* Styles de section avantages */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  gap: 20px;
 }
 
-.order-form label{
-
-    display: block;
-    margin: 10px
+main h1 {
+  font-size: 50px;
+  color:rgb(73, 74, 64)
 }
-    
-    footer {
-        background-color: #20542b;
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .footer-content {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    
-    .footer-links {
-        list-style: none;
-        padding: 0;
-        margin: 10px 0;
-    }
-    
-    .footer-links li {
-        display: inline;
-        margin: 0 15px;
-    }
-    
-    .footer-links a {
-        color: white;
-        text-decoration: none;
-    }
-    
-    .footer-links a:hover {
-        text-decoration: underline;
-    }
-    
-    .social-media {
-        margin-top: 10px;
-    }
-    
-    .social-media a {
-        color: white;
-        margin: 0 10px;
-        text-decoration: none;
-    }
-    
-    .social-media a:hover {
-        text-decoration: underline;
-    }
+main h1 b {
+  color: rgb(73, 74, 64);
+}
+
+
+.livraison-section {
+  background-color: #f9f9f9; /* Couleur de fond douce */
+  padding: 20px; /* Espacement intérieur */
+}
+
+.livraison-container {
+  display: flex; /* Utilise flexbox pour aligner les éléments en ligne */
+  justify-content: space-between; /* Espace entre les éléments */
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+  max-width: 1300px; /* Largeur maximale pour le conteneur */
+  margin: 0 auto; /* Centre le conteneur */
+}
+
+.livraison-item {
+  flex: 2; /* Permet aux éléments de prendre de l'espace */
+  text-align: center; /* Centre le texte */
+  margin: 20px; /* Espace autour de chaque élément */
+  padding: 10px; /* Espace intérieur */
+  background-color: #ffffff86; /* Couleur de fond des éléments */
+  border: 1px solid #ccc; /* Bordure autour des éléments */
+  border-radius: 8px; /* Arrondir les coins */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour le style */
+  transition: transform 0.3s; /*Transition pour un effet au survol*/
+}
+
+.livraison-item:hover {
+  transform: scale(1.05); /* Agrandissement au survol */
+}
+
+.icon {
+  width: 40px; /* Largeur des icônes */
+  height: auto; /* Garde les proportions de l'image */
+  margin-bottom: 10px; /* Espace entre l'icône et le texte */
+}
+
+
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+main h1 {
+  font-size: 50px;
+  color:rgb(203, 222, 111)
+}
+
+main h1 span {
+  color: rgb(139, 154, 60);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+main h1 {
+  font-size: 50px;
+}
+
+main h1 span {
+  color: rgb(150, 166, 85);
+}
+
+
+.cadre-container {
+  width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.Produits {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  gap: 10px;
+  overflow: hidden;
+  /* -webkit-box-shadow: 0px 11px 35px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 11px 35px 0px rgba(0,0,0,0.75); */
+  box-shadow: 0px 11px 35px 0px rgba(0,0,0,0.75);
+}
+.Produits:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 11px 35px 0px rgba(0,0,0,0.9);
+  cursor: pointer; /* Ajoute un curseur de pointeur pour indiquer que l'élément est clickable */
+}
+
+.Produits img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.Produits button {
+  width: 200px;
+  height: 40px;
+  background-color: rgb(185, 200, 107);
+  color: white;
+  font-size: 17px;
+  box-shadow: 0px 11px 35px 0px 
+}
+
+/*Presentation de Vendora */
+
+.Presentation-section {
+  display: flex; /* Utiliser flexbox pour la disposition */
+  justify-content: center; /* Centrer le contenu horizontalement */
+  align-items: center; /* Centrer le contenu verticalement */
+  padding: 40px; /* Espace autour de la section */
+  background-color: #f8f8f8; /* Couleur de fond de la section */
+}
+
+.content-container {
+  display: flex; /* Disposition en ligne */
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 1200px; /* Optionnel : limite la largeur maximale pour un meilleur rendu */
+}
+
+.image-container {
+  flex: 1; /* Prend une part égale de l'espace disponible */
+  max-width: 50%; /* Limite la largeur de l'image à 50% de l'écran */
+  margin-right: 20px; /* Espace entre l'image et la description */
+}
+
+.image-container img {
+  width: 100%; /* L'image prend 100% de la largeur de son conteneur */
+  height: auto; /* Conserve les proportions de l'image */
+}
+
+.description-container  {
+  flex: 1; /* Prend une part égale de l'espace disponible */
+}
+.description-container h2 {
+  margin-bottom: 20px; /* Espace sous le titre */
+}
+
+.description-container p {
+  margin-bottom: 15px; /* Espace entre les paragraphes */
+}
