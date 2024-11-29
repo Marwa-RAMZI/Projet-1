@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendora site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo Vendora">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Produits</a></li>
+            <li><a href="">Contact</a></li>
+            
+        </ul>
+        
+        <div class="search">
+            <input type="text" placeholder="Rechercher des produits..." class="search-input">
+            <img id="icon" src="iconsearch.png" alt="Icône de recherche">
+        </div>
+    </nav>
+
+    <!-- Image de la landing page -->
+<div class="landing-image-container">
+    <img src="landing-image.png" alt="Image de Landing Page" class="landing-image">
+</div>
+
+<!-- Les avantages permanents -->
+<main>
+    <!-- <h1><b>Vos avantages permanents</b></h1> -->
+    <h1 class="title">Vos avantages permanents</h1>
+</main>
+
+<section class="livraison-section">
+    <div class="livraison-container">
+        <div class="livraison-item">
+            <img src="image1.png" alt="Livraison" class="icon">
+            <p>Livraison Maroc à partir de 25 dhs</p>
+        </div>
+        <div class="livraison-item">
+            <img src="image2.png" alt="Satisfaction" class="icon">
+            <p>Votre satisfaction et notre but</p>
+        </div>
+        <div class="livraison-item">
+            <img src="image3.png" alt="Sans produits chimiques" class="icon">
+            <p>Sans produits chimiques</p>
+        </div>
+       
+        <div class="livraison-item">
+            <img src="image4.png" alt="Mini produit offert" class="icon">
+            <p>Mini produit offert dès 300 dhs d'achats</p>
+        </div>
+    </div>
+</section>
+
+<!-- Les produits vendus -->
+<main>
+    <h1>Nos produits<span> bio </span>et naturelles !</h1>
+</main>
+
+<section>
+    <div class="cadre-container">    
+        <div class="Produits">
+            <img src="serum product.png" alt="">
+            <h1>Sérum bio </h1>
+            <span class="prix">699$</span>
+            <button>Ajouter au panier</button>
+        </div>
+
+        <div class="Produits">
+            <img src="choimpoing product.png" alt="">
+            <h1>Chompoing product </h1>
+            <span class="prix">699$</span>
+            <button>Ajouter au panier</button>
+        </div>
+
+        <div class="Produits">
+            <img src="crème product.png" alt="">
+            <h1>crème product </h1>
+            <span class="prix">699$</span>
+            <button>Ajouter au panier</button>
+        </div>
+
+        <div class="Produits">
+            <img src="spray product.png" alt="">
+            <h1>Spray bio </h1>
+            <span class="prix">699$</span>
+            <button>Ajouter au panier</button>
+        </div>
+
+    </div>
+        <!-- Presentation de Vendora -->
+
+        <section class="presentation-section">
+            <div class="content-container">
+                <div class="image-container">
+                    <img src="Presentimage.png" alt="Huile pour cheveux bio" />
+                </div>
+                <div class="description-container">
+                    <h1>Notre entreprise</h1>
+                    <p>
+                        Vendora, ce n'est pas seulement une gamme de produits pour les cheveux ;
+                        c'est une véritable histoire enracinée dans la quête de soin et de bien-être. Inspirée par la richesse des traditions
+                        et des ingrédients naturels, Vendora réinvente les rituels capillaires en alliant expertise et passion.
+                        Chaque produit, qu'il s'agisse de nos sérums revitalisants, shampoings nourrissants, crèmes démêlantes ou sprays protecteurs, 
+                        est conçu pour révéler la beauté. naturel de vos cheveux tout en racontant une histoire : celle d'un héritage de soin, 
+                        transmis et réinventé pour les besoins d'aujourd'hui.
+                        Avec Vendora, vos cheveux ne sont pas seulement soignés, ils vivent une expérience unique.
+                    </p>
+                    <div class="btn-container">
+                        <button class="learn-more-button">En savoir plus</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        
+
+        <!-- <h2>Huile Cosmétique pour Cheveux</h2>
+        <p>Notre huile cosmétique pour cheveux nourrit et hydrate vos cheveux, leur donnant brillance et douceur.</p>
+        <p>Elle est formulée à partir d'ingrédients naturels et est idéale pour tous les types de cheveux.</p>
+        <p>Utilisez-la quotidiennement pour des résultats optimaux.</p>
+    </section>  -->
+
+
+    <!-- Formulaire de commande
+    <section class="order-form">
+        <h2>Passer une commande</h2>
+        <form id="commandeForm">
+            <label for="nom">Nom et Prénom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" required>
+
+            <label for="codePostal">Code Postal :</label>
+            <input type="text" id="codePostal" name="codePostal" required>
+
+            <label for="telephone">Numéro de Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <label for="quantite">Quantité :</label>
+            <input type="number" id="quantite" name="quantite" min="1" required>
+
+            <label for="total">Total de la Commande :</label>
+            <input type="text" id="total" name="total" readonly>
+
+            <button type="submit">Finaliser la Commande</button>
+        </form>
+        <div id="error-message" class="error-message"></div>
+    </section>
+    
+    Footer
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 Vendora. Tous droits réservés.</p>
+        <ul class="footer-links">
+            <li><a href="#privacy">Politique de Confidentialité</a></li>
+            <li><a href="#terms">Conditions d'Utilisation</a></li>
+            <li><a href="#contact">Contactez-Nous</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+    </div>
+</footer> -->
+
+<script src="script.js"></script>
+</body>
+</html> 
