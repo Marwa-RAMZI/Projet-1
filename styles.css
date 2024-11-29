@@ -1,8 +1,11 @@
+
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins";
 }
+
 /* Styles de la barre de navigation */
 .navbar {
 background-color: #f0f7f1; /* Couleur de fond */
@@ -11,13 +14,13 @@ justify-content: space-between;
 align-items: center;
 color: rgb(86, 87, 87);
 height: 100px;
-padding: 10px 10px;
+padding: 15px 10px;
 gap: 0px;
 border-bottom: 2px solid #6b9d72; /* Bordure en bas */
 }
 .navbar .logo img {
-height: 90px; /* Augmenter la taille de l'image du logo */
-width: auto; /* Conserver le ratio de l'image */
+width: 180px; /* Augmenter la taille de l'image du logo */
+height: auto; /* Conserver le ratio de l'image */
 }
 .navbar ul {
 display: flex;
@@ -30,6 +33,7 @@ font-family: "Poppins", sans-serif;
 color: rgb(87, 86, 86); /* Couleur des éléments de la liste */
 }
 .navbar ul li a {
+  font-size: 1.6rem;
 text-decoration: none; /* Supprime le soulignement */
 color: rgb(87, 86, 86); /* Couleur des liens */
 transition: color 0.3s; /* Transition pour le changement de couleur */
@@ -47,10 +51,10 @@ color: #6c920d; /* Couleur au survol */
 }
 
 .search-input {
-  padding: 5px;
+  padding: 15px 20px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  font-size: 13px;
+  font-size: 16px;
   flex: 1;
 }
 
@@ -62,8 +66,8 @@ color: #6c920d; /* Couleur au survol */
 }
 
 #icon {
-  width: 27px;
-  height: 27px;
+  width: 35px;
+  height: 35px;
 }
 
 
@@ -88,13 +92,35 @@ main {
   gap: 20px;
 }
 
-main h1 {
+.title {
+  position: relative;
   font-size: 50px;
-  color:rgb(73, 74, 64)
+  color:rgb(73, 74, 64);
+  margin-bottom: 2rem;
 }
-main h1 b {
+
+.title::before,
+.title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 150px; 
+    height: 1px; 
+    background-color: #ccc; 
+    transform: translateY(-50%);
+}
+
+.title::before {
+  left: -160px; 
+}
+
+.title::after {
+  right: -160px; 
+}
+
+/* main h1 b {
   color: rgb(73, 74, 64);
-}
+} */
 
 
 .livraison-section {
@@ -187,6 +213,7 @@ main h1 span {
   /* -webkit-box-shadow: 0px 11px 35px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 11px 35px 0px rgba(0,0,0,0.75); */
   box-shadow: 0px 11px 35px 0px rgba(0,0,0,0.75);
+  transition: .5s ease-in-out;
 }
 .Produits:hover {
   transform: scale(1.05);
@@ -206,43 +233,94 @@ main h1 span {
   background-color: rgb(185, 200, 107);
   color: white;
   font-size: 17px;
-  box-shadow: 0px 11px 35px 0px 
+  box-shadow: 0px 11px 35px 0px ;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 /*Presentation de Vendora */
-
+/* 
 .Presentation-section {
-  display: flex; /* Utiliser flexbox pour la disposition */
-  justify-content: center; /* Centrer le contenu horizontalement */
-  align-items: center; /* Centrer le contenu verticalement */
-  padding: 40px; /* Espace autour de la section */
-  background-color: #f8f8f8; /* Couleur de fond de la section */
-}
+  display: flex; /* Utiliser flexbox pour la disposition 
+  justify-content: center; /* Centrer le contenu horizontalement 
+  align-items: center; /* Centrer le contenu verticalement 
+  padding: 40px; /* Espace autour de la section 
+  background-color: #f8f8f8; /* Couleur de fond de la section 
+} */
 
-.content-container {
-  display: flex; /* Disposition en ligne */
-  width: 100%; /* Prend toute la largeur disponible */
-  max-width: 1200px; /* Optionnel : limite la largeur maximale pour un meilleur rendu */
-}
+/* .content-container {
+  display: flex; /* Disposition en ligne 
+  width: 100%; 
+} */
 
-.image-container {
-  flex: 1; /* Prend une part égale de l'espace disponible */
-  max-width: 50%; /* Limite la largeur de l'image à 50% de l'écran */
-  margin-right: 20px; /* Espace entre l'image et la description */
-}
+/* .image-container {
+  /* flex: 1; Prend une part égale de l'espace disponible 
+  /* max-width: 50%; Limite la largeur de l'image à 50% de l'écran 
+  /* margin-right: 20px; Espace entre l'image et la description 
+} */
 
-.image-container img {
-  width: 100%; /* L'image prend 100% de la largeur de son conteneur */
-  height: auto; /* Conserve les proportions de l'image */
-}
+/* .image-container img {
+  width: 100%; /* L'image prend 100% de la largeur de son conteneur 
+  height: auto; /* Conserve les proportions de l'image 
+} */
 
-.description-container  {
-  flex: 1; /* Prend une part égale de l'espace disponible */
-}
+/* .description-container  {
+  flex: 1; Prend une part égale de l'espace disponible
+} */
+
+/* 
 .description-container h2 {
-  margin-bottom: 20px; /* Espace sous le titre */
+  margin-bottom: 20px; /* Espace sous le titre 
 }
 
 .description-container p {
-  margin-bottom: 15px; /* Espace entre les paragraphes */
+  margin-bottom: 15px; /* Espace entre les paragraphes 
+} */
+
+.presentation-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 10rem;
+  margin-top: 2rem;
+  background-color: #f8f8f8;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.content-container img {
+  width: 100%;
+  height: auto;
+}
+
+.description-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.description-container p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.description-container .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description-container .learn-more-button{
+  padding: 1rem 2rem;
+  background-color: #B9C86B;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
