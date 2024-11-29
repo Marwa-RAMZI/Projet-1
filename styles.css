@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -95,6 +97,32 @@ main {
   color:rgb(73, 74, 64);
   margin-bottom: 2rem;
 }
+<<<<<<< HEAD
+=======
+
+.title::before,
+.title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 150px; 
+    height: 1px; 
+    background-color: #ccc; 
+    transform: translateY(-50%);
+}
+
+.title::before {
+  left: -160px; 
+}
+
+.title::after {
+  right: -160px; 
+}
+
+/* main h1 b {
+  color: rgb(73, 74, 64);
+} */
+>>>>>>> 4ebf8a601192d7cd1d75bea1d21d83fdfea7bb83
 
 .title::before,
 .title::after {
@@ -255,7 +283,13 @@ main h1 span {
   border-radius: 8px;
   gap: 10px;
   overflow: hidden;
+<<<<<<< HEAD
   box-shadow: 0px 11px 35px 0px rgba(198, 188, 188, 0.75);
+=======
+  /* -webkit-box-shadow: 0px 11px 35px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 11px 35px 0px rgba(0,0,0,0.75); */
+  box-shadow: 0px 11px 35px 0px rgba(0,0,0,0.75);
+>>>>>>> 4ebf8a601192d7cd1d75bea1d21d83fdfea7bb83
   transition: .5s ease-in-out;
 }
 .Produits:hover {
@@ -281,6 +315,7 @@ main h1 span {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 /* Styles description produits */
 
 main {
@@ -522,3 +557,91 @@ label span,
   font-size: 16px;
   text-align: center;
 }
+=======
+/*Presentation de Vendora */
+/* 
+.Presentation-section {
+  display: flex; /* Utiliser flexbox pour la disposition 
+  justify-content: center; /* Centrer le contenu horizontalement 
+  align-items: center; /* Centrer le contenu verticalement 
+  padding: 40px; /* Espace autour de la section 
+  background-color: #f8f8f8; /* Couleur de fond de la section 
+} */
+
+/* .content-container {
+  display: flex; /* Disposition en ligne 
+  width: 100%; 
+} */
+
+/* .image-container {
+  /* flex: 1; Prend une part égale de l'espace disponible 
+  /* max-width: 50%; Limite la largeur de l'image à 50% de l'écran 
+  /* margin-right: 20px; Espace entre l'image et la description 
+} */
+
+/* .image-container img {
+  width: 100%; /* L'image prend 100% de la largeur de son conteneur 
+  height: auto; /* Conserve les proportions de l'image 
+} */
+
+/* .description-container  {
+  flex: 1; Prend une part égale de l'espace disponible
+} */
+
+/* 
+.description-container h2 {
+  margin-bottom: 20px; /* Espace sous le titre 
+}
+
+.description-container p {
+  margin-bottom: 15px; /* Espace entre les paragraphes 
+} */
+
+.presentation-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 10rem;
+  margin-top: 2rem;
+  background-color: #f8f8f8;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.content-container img {
+  width: 100%;
+  height: auto;
+}
+
+.description-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.description-container p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.description-container .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description-container .learn-more-button{
+  padding: 1rem 2rem;
+  background-color: #B9C86B;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+>>>>>>> 4ebf8a601192d7cd1d75bea1d21d83fdfea7bb83
